@@ -18,3 +18,15 @@ class Piramide:
             self.mover_piedras(num_piedras - 1, origen, auxiliar, destino)
             self.mover_piedras(1, origen, destino, auxiliar)
             self.mover_piedras(num_piedras - 1, auxiliar, destino, origen)
+    
+    def resolver(self):
+        print("Estado inicial:")
+        print(self.columna_origen)
+        print(self.columna_auxiliar)
+        print(self.columna_destino)
+        print("\nMovimientos:")
+        self.mover_piedras(len(self.columna_origen.piedras), self.columna_origen, self.columna_destino, self.columna_auxiliar)
+        print("\nEstado final:")
+        print(self.columna_origen)
+        print(self.columna_auxiliar)
+        print(self.columna_destino)
