@@ -1,6 +1,4 @@
-from Piramide import Piramide
+from lanzador import main
 
 if __name__ == "__main__":
-    num_piedras = 74  # Número de piedras en la pirámide
-    piramide = Piramide(num_piedras)
-    piramide.resolver()
+    main()
